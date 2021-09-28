@@ -1,0 +1,508 @@
+body{
+   font-family: 'Lato', sans-serif;
+
+}
+
+
+header{
+  display:flex;
+  posistion:relative;
+  justify-content:space-between;
+  align-items:center;
+  background-color:#222222;
+  color:white;
+  font-size:15px;
+  padding-left: 15px;
+  padding-right: 30px;
+
+}
+
+
+
+
+.page-links {
+  display:flex;
+  list-style:none;
+  align-items:center;
+  justify-content: center;
+  margin-right:auto;
+
+}
+
+.page-links li a:hover{
+  background-color:#585858;
+
+  color:white;
+
+
+}
+
+
+
+.page-links ul li{
+  list-style: none;
+  width:100%;
+  height:100%;
+
+}
+
+.page-links li a{
+  text-decoration: none;
+  padding:20px;
+  color:white;
+  list-style:none;
+  border-right: 1px solid #616161;
+  border-left: 1px solid #616161;
+  font-weight:bold;
+  width:100%;
+  height:100%;
+  letter-spacing:1px;
+
+
+}
+
+button{
+  color:white;
+  font-weight:bold;
+  font-size:10px;
+  padding:7px;
+  width:70px;
+}
+
+button:hover{
+  background-color:#09647A;
+  cursor:pointer;
+}
+
+.right-side input[type=text]{
+  font-size:20px;
+}
+
+.login{
+  background-color:#00A9B7;
+  border:none;
+  border-radius:12px;
+  letter-spacing:1px;
+}
+
+.bag{
+  background-color:#00A9B7;
+  border:none;
+  border-radius:12px;
+  letter-spacing:1px;
+}
+
+
+.logo{
+  font-weight:700;
+  border:solid red;
+  padding:5px;
+  margin-left:10px;
+  letter-spacing:2px;
+}
+
+
+
+.search-bar{
+  flex:1;
+  outline: none;
+  padding:7px;
+  color:black;
+  width:600px;
+  border:none;
+  border-radius:10px;
+  height:25px;
+  font-size:12px;
+}
+
+.search-form > i{
+  cursor:pointer;
+  padding-right:10px;
+}
+
+
+
+
+sale-banner{
+  display:flex;
+  background-color:orange;
+  width:100%;
+  justify-content:center;
+  margin-top:0;
+  color:white;
+}
+
+.sale-subtitle{
+  color:green;
+}
+
+.sale-code{
+  border:solid white;
+  color:white;
+}
+
+.middle-container{
+  background-color:blue;
+  position:relative;
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.33),
+      rgba(0, 0, 0, 0.33)
+    ),url(index-images/main-image.jpg);
+  background-size:cover;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  margin-top:50px;
+}
+
+
+
+.main-heading{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  letter-spacing:1px;
+  font-size:60px;
+  width:400px;
+  font-weight:bold;
+  color:white;
+}
+
+.main-subtitle{
+  position: absolute;
+  top: 53%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:bold;
+  color:white;
+
+}
+
+.shop{
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size:15px;
+  padding:5px;
+  font-weight:bold;
+  color:#222222;
+  background-color:white;
+}
+
+
+
+.content-wrapper{
+  width:80%;
+  margin:4% 10% 5% 10%;
+}
+
+.content-wrapper img{
+
+  width:100%;
+
+
+}
+
+.back-logo{
+  height:400px;
+  border:5px solid white;
+
+}
+
+.middle-container{
+
+  position:relative;
+
+  height:600px;
+  width:100%;
+}
+
+.image-container{
+  background: linear-gradient(
+      rgba(0, 0, 0, 0.33),
+      rgba(0, 0, 0, 0.33)
+    ),url(index-images/chest-logo.jpg);
+
+  background-size:cover;
+  position:relative;
+  width:700px;
+  height:500px;
+  background-color:blue;
+  left:0;
+  right:0;
+  top:0;
+  bottom:0;
+  margin:auto;
+  margin-top:50px;
+  color:white;
+
+
+}
+
+
+
+.pink-lotion-subtitle{
+
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-weight:bold;
+  color:white;
+}
+
+.pink-lotion-title{
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border:5px solid white;
+  font-size:60px;
+  width:400px;
+  font-weight:bold;
+  color:white;
+}
+
+middle-containter-subtitle{
+  display:flex;
+  background-color:red;
+  font-weight:bold;
+}
+
+.middle-subtitle{
+  font-size:15px;
+  margin-top:-50px;
+  text-align:center;
+  font-weight:bold;
+  padding-bottom:30px;
+}
+
+.bottom-container{
+  display:grid;
+  height:600px;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #e8e9ea;
+  padding-top:20px;
+  grid-gap:10px;
+  object-fit: contain;
+
+}
+
+.about-main{
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.33),
+      rgba(0, 0, 0, 0.33))
+    ,url(about-images/main-image.jpg);
+  background-size:cover;
+  width:100%;
+  height:800px;
+  background-color:blue;
+  color:white;
+}
+
+.main-about-info{
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-size:20px;
+  width:800px;
+  font-weight:normal;
+  color:white;
+}
+
+
+.imagebox > img{
+  width:100%;
+  height: 100%;
+  object-fit:cover;
+}
+
+footer{
+    background-color:#222222;
+    list-style:none;
+}
+
+footer ul{
+  list-style:none;
+  justify-content:center;
+  display:flex;
+  padding:20px;
+  text-align:center;
+
+}
+
+
+.left-footer li a{
+  text-decoration:none;
+  color:white;
+  margin-right:auto;
+  top:50%;
+  padding:20px;
+  cursor:pointer;
+}
+
+.left-footer li a:hover{
+  color:#585858;
+}
+
+
+
+
+
+
+/* MENS CATALOGUE */
+
+.catalogue-container{
+  display:grid;
+  grid-template-columns:1fr 1fr 1fr 1fr;
+  background-color:#e8e9ea;
+  object-fit: contain;
+  padding-top:50px;
+  padding-bottom:100px;
+  grid-gap:30px;
+  
+}
+
+
+
+
+
+
+.mens-catalogue-item > img{
+
+}
+
+
+.item-info{
+  justify-content: flex-start;
+  list-style:none;
+  width:300px;
+  font-size:12px;
+  justify-content:start;
+}
+
+
+
+.price{
+  font-weight:bold;
+  font-size:16px;
+}
+
+.new-item-banner{
+  background-color:red;
+  height:30px;
+}
+
+.mens-catalogue-item > img {
+  height:300px;
+}
+
+.new-tag{
+
+   position:absolute;
+  bottom:0;
+  left:0;
+  margin-bottom:418px;
+
+  background-color:orange;
+  width:100%;
+  text-align:center;
+  /* padding-top:5px;
+  padding-bottom:5px;  */
+}
+
+ .item-sizes{
+   color:black;
+ }
+
+ .size-button{
+   color:black;
+   border:none;
+   background-color:white;
+   transition: 0.3s;
+ }
+
+.size-button:hover{
+  background-color:black;
+  color:white;
+}
+
+/* MODAL SECTION -------- */
+
+
+.login-modal{
+  align-items: center;
+  background-color: rgba(0,0,0,0.7);
+  display: flex;
+  justify-content: center;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  display:none;
+}
+
+.modal-content{
+  background-color: #fff;
+  border: 4px solid grey;
+  font-size: 24px;
+  max-width: 500px; /* why max-width, not width? This allows the element to be responsive and resize smaller for mobile */
+  text-align: center;
+  height:300px;
+  width:500px;
+  position:relative;
+
+
+}
+
+.login-logo{
+  font-weight:bold;
+  text-align:center;
+  font-size:40px;
+}
+
+form{
+  display:block;
+}
+.login-space{
+  padding:5px;
+  border-radius:5px;
+  border:solid black;
+  display:block;
+  margin:15px auto;
+  height:20px;
+  width:200px;
+
+}
+
+.login-modal a{
+  text-decoration:none;
+  background-color:black;
+  padding:5px;
+  border-radius:5px;
+  color:white;
+  font-size:20px;
+  transition: 0.3s;
+
+}
+
+.login-modal a:hover{
+  background-color:#00A9B7;
+  color:white;
+}
+
+.close{
+  position:absolute;
+  top: 0;
+  right: 14px;
+  font-size:35px;
+  transform: rotate(45deg);
+}
