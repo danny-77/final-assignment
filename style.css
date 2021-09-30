@@ -611,3 +611,9 @@ form{
         width:80px;;
       }
 }
+
+@media (max-width: 550px){
+  .mens-catalogue-container{
+    display:block;
+  }
+}
