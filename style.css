@@ -1,10 +1,12 @@
 body{
    font-family: 'Lato', sans-serif;
+   width:100%;
+   height:100%;
 
 }
 
 
-header{
+.nav{
   display:flex;
   posistion:relative;
   justify-content:space-between;
@@ -19,8 +21,79 @@ header{
 
 
 
+label{
+  margin: 0 40px 0 0;
+  font-size: 26px;
+  line-height: 70px;
+  display: none;
+}
 
-.page-links {
+.hamburg-menu{
+  text-align: center;
+  width: 100%;
+  background-color: #616161;
+  display:none;
+
+}
+
+.hamburg-menu a{
+  display:block;
+  border-bottom: 1px solid white;
+  margin: 0;
+  text-decoration: none;
+  color:white;
+  height:50px;
+}
+
+#toggle{
+  display: none;
+}
+
+@media only screen and (max-width: 500px) {
+  label{
+    display:block;
+    cursor:pointer;
+  }
+
+  .menu{
+    text-align: center;
+    width: 100%;
+    display:none;
+
+  }
+
+
+
+  .menu a{
+    display:none;
+    border-bottom: 1px solid #616161;
+    margin:0;
+
+
+  }
+
+
+  .hamburg-menu{
+    text-align:center;
+    width:100%;
+  }
+
+  .hamburg-menu a{
+    display:block;
+    border-bottom: 1px solid white;
+    margin:0;
+    padding-top:10px;
+  }
+
+
+
+
+  #toggle:checked + .hamurg-menu{
+    display:block;
+  }
+}
+
+.menu {
   display:flex;
   list-style:none;
   align-items:center;
@@ -29,24 +102,21 @@ header{
 
 }
 
-.page-links li a:hover{
+.menu li a:hover{
   background-color:#585858;
-
   color:white;
-
-
 }
 
 
 
-.page-links ul li{
+.menu ul li{
   list-style: none;
   width:100%;
   height:100%;
 
 }
 
-.page-links li a{
+.menu li a{
   text-decoration: none;
   padding:20px;
   color:white;
@@ -78,6 +148,13 @@ button:hover{
   font-size:20px;
 }
 
+@media only screen and (max-width: 730px){
+.right-side {
+  display:none; }
+}
+
+
+
 .login{
   background-color:#00A9B7;
   border:none;
@@ -95,9 +172,11 @@ button:hover{
 
 .logo{
   font-weight:700;
-  border:solid red;
+  border:solid pink;
   padding:5px;
-  margin-left:10px;
+
+
+  margin-right:10px;
   letter-spacing:2px;
 }
 
@@ -119,6 +198,16 @@ button:hover{
   cursor:pointer;
   padding-right:10px;
 }
+
+@media only screen and (max-width: 1172px) {
+  .search-bar{
+    display:none;
+  }
+
+  .search-form > i{
+    display:none;
+  }
+  }
 
 
 
@@ -367,7 +456,7 @@ footer ul{
   padding-top:50px;
   padding-bottom:100px;
   grid-gap:30px;
-  
+
 }
 
 
@@ -402,6 +491,11 @@ footer ul{
 
 .mens-catalogue-item > img {
   height:300px;
+  transition: 1s;
+}
+
+.mens-catalogue-item > img:hover{
+  transform: scale(1.1);
 }
 
 .new-tag{
@@ -505,4 +599,15 @@ form{
   right: 14px;
   font-size:35px;
   transform: rotate(45deg);
+}
+
+@media (max-width: 768px){
+    .bottom-container{
+      display:inline;
+      margin: 20px;}
+
+      .image.box > img{
+        height:100px;
+        width:80px;;
+      }
 }
