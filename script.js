@@ -6,8 +6,14 @@
 //  console.log("button clicked")
 // }
 // loginButton.addEventListener("click", openModal)
+//
 
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
 
-document.getElementsByClassName("login").addEventListener("click", function(){
-  document.querySelector(".login-modal").style.display = "flex";
-})
+hamburger.addEventListener("click", mobileMenu);
+
+function mobileMenu() {
+    hamburger.classList.toggle("active");
+    navMenu.classList.toggle("active");
+}
